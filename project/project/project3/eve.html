@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript</title>
+</head>
+<body>
+    <div id="container">
+    <ul id="list">
+        <li><img width="250px" src="D:\Wallpaper\20181023_140027.jpg" alt="image" id="img"></li>
+        <li><img width="200px"  src="D:\Wallpaper\20181023_135951.jpg" alt="anime" id="japan"></li>
+        <li><img width="200px" src="D:\Wallpaper\20181023_135809.jpg" alt="photo" id="photo"></li>
+    </ul>
+    </div>
+    <script>
+        //document.getElementById("japan", onclick=function(){
+        //    alert("clicked on image")
+        //})
+
+        //document.querySelector('#img').addEventListener('click',function(e){
+        //    e.preventDefault();
+        //   alert("clicked on image")
+
+        //},false)
+
+        document.querySelector('#container').addEventListener('click',function(e){
+            console.log(e.target.id);
+
+            if(e.target.tagName==="IMG"){
+                let removeIt=e.target.parentNode;
+                removeIt.remove();
+            }
+            
+            
+        },false)
+    </script>
+</body>
+</html>

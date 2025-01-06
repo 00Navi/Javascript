@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+</head>
+<style>
+    #nav{
+        background-color: blanchedalmond;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    #link{
+        text-decoration: none;
+        padding: 5px;
+        margin:5px;
+        background-color: rgb(226, 211, 211);
+        border-block-color: black;
+    }
+
+    #container{
+        background-color: rgb(199, 246, 246);
+        padding: 10px;
+        
+    }
+
+</style>
+<body style="background-color:rgb(244, 205, 158); color:rgb(221, 83, 83)">
+    <nav id="nav">
+        <a id="link" href="/" aria-current="page">Home</a>
+        <a id="link" href="https://github.com">Github</a>
+    </nav>
+
+    <div id="container">
+        <h1>Guess the number</h1>
+        <p>Try to guess a random number between 1 to 100</p>
+        <p>You have 10 attempts to guess</p>
+        <br>
+        <form>
+            <label for="guess" id="guess">Guess the number</label>
+            <input type="text" id="guessfield" class="guessField" placeholder="Enter the guess">
+            <button id="submit">Submit Guess</button>
+        </form>
+        
+        <div class="resultParser">
+            <p>Previous Guesses:<span class="guesses"></span></p>
+            <p>Guesses Remaining:<span class="lastResult"></span></p>
+            <p class="lowOrhi"></p>
+        </div>
+    </div>
+    <script src="guess.js"></script>
+</body>
+</html>

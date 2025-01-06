@@ -121,9 +121,9 @@ const prgm=["js","py","cpp","java","c"]
 
 const coding=["js","py","cpp","java","c"]
 
-coding.forEach(function (item,index,Array){
-        console.log(item,index,Array);
-})
+// coding.forEach(function (item,index,Array){
+//         console.log(item,index,Array);
+// })
 
 const myCode=[
     {
@@ -167,7 +167,7 @@ const myNums=[1,2,3,4,5,6]
 // },0)
 
 const myTotal=myNums.reduce((acc,curr)=>acc+curr,0)
-// console.log(myTotal);
+console.log(myTotal);
 
 const shoppingCart=[
     {
@@ -190,6 +190,6 @@ const shoppingCart=[
 ]
 
 const pricetopay=shoppingCart.reduce((acc,course)=>acc+course.price,0)
-//console.log(pricetopay);
+console.log(pricetopay);
 
 
