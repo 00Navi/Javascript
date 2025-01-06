@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+</head>
+<style>
+    .body{
+        font-display: Time new roman;
+        background-image: url("https://www.google.com/imgres?q=live%20clock%20images&imgurl=https%3A%2F%2Fcdn.wallpapersafari.com%2F0%2F84%2FS4xnNK.jpeg&imgrefurl=https%3A%2F%2Fwallpapersafari.com%2Flive-clock-wallpaper-for-desktop%2F&docid=coOspkTRFCaP0M&tbnid=LDLLUpyBsAjK6M&vet=12ahUKEwia5eHqhc-KAxVBSWwGHf4AE5UQM3oECEUQAA..i&w=1024&h=768&hcb=2&ved=2ahUKEwia5eHqhc-KAxVBSWwGHf4AE5UQM3oECEUQAA");
+        background-color: goldenrod;
+        padding: 10px;
+        margin: 5px;
+    }
+    .nav{
+        display: inline-block;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+    }
+    #link{
+        text-align: center;
+        text-shadow: 0.5px 0.5px 0.5px black;
+        text-decoration: none;
+        padding: 5px;
+        margin: 6px;
+        background-color: antiquewhite;
+    }
+    .clock{
+        text-align: center;
+        display: inline-block;
+        background-color: oldlace;
+        padding: 5px 10px 10px 10px;
+        margin: 10px;
+
+    }
+</style>
+<body class="body">
+    <nav class="nav">
+        <a id="link" href="/" aria-current="page">Home</a>
+        <a id="link" target="_blank" href="https://github.com">Github</a>
+    </nav>
+    <div class="container">
+    <div class="clock"><span>Your Local Time</span></div>
+    <div id="banner"></div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
