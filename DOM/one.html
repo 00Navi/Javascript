@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body style="background-color:lightyellow">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector(".parent")
+    console.log("parent")
+    console.log(parent.children)
+    //console.log(parent.children[1].innerHTML)
+
+    for(let i=0;i<parent.children.length;i++){
+        //console.log(parent.children[i].innerHTML)
+    }
+    parent.children[0].style.color="orange"
+    console.log(parent.firstElementChild);
+    console.log(parent.LastElementChild);
+
+    const days=document.querySelector('.day')
+    console.log(days);
+    //console.log(days.parentElement);
+    //console.log(days.nextElementSibling);
+    //console.log("NODES: ",parent.childNodes);
+</script>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(124, 126, 110)">
+    
+</body>
+<script>
+    const div=document.createElement('div')
+    console.log(div)
+    div.className="main";
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","Welcome to Javascript")
+    div.style.backgroundColor="white"
+    div.style.padding="12px"
+    //div.innerText="Chai ur code"
+    const text=document.createTextNode("Hello World")
+    div.appendChild(text)
+
+    document.body.appendChild(div)
+</script>
+</html>
